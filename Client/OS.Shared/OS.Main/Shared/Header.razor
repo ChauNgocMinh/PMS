@@ -1,0 +1,181 @@
+﻿<div class="sub-header">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-center col-xl-6 col-lg-6 col-md-10 col-sm-12">
+                <div class="icon icon-left w-100">
+                    <ul class="nav">
+                        <li class="nav-item px-2">
+                            <a href="tel:+143-52-9933631"> <i style="color: #00a7c1;" class="fa-solid fa-phone"></i> +143-52-9933631</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="mailto:academy@example.com"><i style="color: #00a7c1;" class="fa-regular fa-envelope"></i> academy@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu-area">
+    <div class="container h-100 d-flex">
+        <div class="h-100">
+            <a href="/"><img class="h-100" src="./image/Logo.png" /></a>
+        </div>
+        <div class="menu-dropdow">
+            <li class="root-dropdow"> <i class="fa-solid fa-bars"></i> Danh mục
+                <ul class="dropdown">
+                    <li><a style="color: black;" class="py-3" href="/"> <i class="fa-solid fa-graduation-cap"></i> Khóa học </a></li>
+                    <li><a style="color: black;" class="py-3" href="/"> <i class="fa-solid fa-pen-to-square"></i> Bài tập </a></li>
+                </ul>
+            </li>
+        </div>
+        <div class="d-flex search-control w-100">
+            <input class="w-100" type="search" placeholder="Tìm kiếm các khóa học" >
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="d-flex align-items-center btn-control" >
+            <a style="min-width: 81px" href="/">
+                Giảng viên
+            </a>
+        </div>
+        <div class="d-flex align-items-center btn-control">
+            <a style="min-width: 130px" href="/">
+                Khóa học của tôi
+            </a>
+        </div>
+        <div class="d-flex align-items-center btn-control">
+            <a style="min-width: 20px" href="/">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="user-control">
+            <div class="h-100"> <img class="h-100" src="./image/user.png"/></div>
+        </div>
+    </div>
+</div>
+
+<div class="course-control">
+    <h3>
+
+    </h3>
+</div>
+<style>
+    .nav .nav-item a{
+        color: black;
+    }
+
+    .sub-header {
+        border-bottom: 1.5px solid #1e293b2a !important;
+        padding: 5px 0 5px 0;
+        background-color: #fff;
+
+    }
+
+    .menu-area{
+        padding: 9px 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+        height: 77px;
+    }
+
+    .menu-area .menu-dropdow{
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-area .menu-dropdow .root-dropdow{
+        position: relative;
+        color: #00a7c1;
+        padding: 7px 15px !important;
+        border-bottom: 1.5px solid #00a7c1 !important;
+        background-color: #00a7c13a;
+        min-width: 125px;
+    }
+
+    .menu-area .menu-dropdow .root-dropdow:hover .dropdown{
+        display: block;
+    }
+
+    .menu-area .menu-dropdow .dropdown{
+        padding: 0;
+        position: absolute;
+        display: none;
+        top: 105%;
+        background-color: #fff;
+        border: none;
+        border-top: 1px solid #e8e9eb;
+        box-shadow: 0 2px 5px 0px rgb(20 23 28 / 25%);
+        color: #505763;
+        left: 0px;
+        text-align: left;
+        height: auto;
+        padding: 15px 0;
+        z-index: 1;
+        border-radius: 8px;
+        
+    }
+
+    .menu-area .menu-dropdow .dropdown li:hover{
+        background-color: #f2f3f5;
+
+    }
+    .menu-area .menu-dropdow .dropdown li{
+        width: 270px;
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        transition: all 0.3s;
+    }
+
+    .menu-area li{
+        list-style: none;
+    }
+
+    .search-control{
+        margin: 9px 0;
+        flex-grow: 1;
+    }
+    
+    .search-control input{
+        border-radius: 5px 0 0 5px;
+        border-top: 1px solid hsl(0deg 0% 82%) !important;
+        border-left: 1px solid hsl(0deg 0% 82%) !important;
+        border-right: none !important;
+        border-bottom: 1px solid hsl(0deg 0% 82%) !important;
+        padding: 0 15px;
+    }
+
+    .search-control button{
+        border-radius: 0px 5px 5px 0px;
+        border-top: 1px solid #C2C2C2 !important;
+        border-right: 1px solid #C2C2C2 !important;
+        border-left: none !important;
+        border-bottom: 1px solid #C2C2C2 !important;
+        background-color: white;
+        padding: 0 15px;
+    }
+
+    .user-control img{
+        transform: scale(0.75);
+        border-radius: 50%;
+    }
+
+    .btn-control {
+        margin: 0 20px;
+    }
+
+    .btn-control a{
+        color: black;
+    }
+    @@media(max-width: 766px) {
+        .icon-left .nav {
+            justify-content: center;
+        }
+    }
+</style>
+@code {
+   
+}
